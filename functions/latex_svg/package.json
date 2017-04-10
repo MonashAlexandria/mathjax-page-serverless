@@ -1,0 +1,17 @@
+{
+  "name": "mathjax-lambda-function",
+  "version": "1.0.0",
+  "description": "Running mathjax-node in AWS Lambda",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "encodeurl": "^1.0.1",
+    "mathjax-node": "^1.0.0",
+    "mathoid-texvcjs": "^0.3.2",
+    "querystring": "^0.2.0"
+  }
+}
