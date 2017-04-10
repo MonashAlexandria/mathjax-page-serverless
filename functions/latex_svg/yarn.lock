@@ -326,6 +326,12 @@ mathjax@*:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-2.7.0.tgz#2c12cac72a7be2b8190f6b3344ca93801a0e5dff"
 
+mathoid-texvcjs@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/mathoid-texvcjs/-/mathoid-texvcjs-0.3.2.tgz#92de138e1bd3d3114b696ef083674c9667f7f356"
+  dependencies:
+    commander "~2.9.0"
+
 mime-db@~1.27.0:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.27.0.tgz#820f572296bbd20ec25ed55e5b5de869e5436eb1"
@@ -448,12 +454,6 @@ stringstream@~0.0.4:
 "symbol-tree@>= 3.1.0 < 4.0.0":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
-
-"texvcjs@git+https://github.com/wikimedia/texvcjs#v0.3.2":
-  version "0.3.2"
-  resolved "git+https://github.com/wikimedia/texvcjs#ddfacd779aa68dbeb47eea5debd87ca5d5bab2c9"
-  dependencies:
-    commander "~2.9.0"
 
 tough-cookie@^2.3.1, tough-cookie@~2.3.0:
   version "2.3.2"
