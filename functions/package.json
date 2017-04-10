@@ -11,6 +11,7 @@
     "bluebird": "^3.5.0",
     "encodeurl": "^1.0.1",
     "mathjax-node": "^1.0.0",
+    "mathjax-node-svg2png": "^1.0.2",
     "mathoid-texvcjs": "^0.3.2",
     "querystring": "^0.2.0"
   }
