@@ -1,5 +1,11 @@
 {
-  "presets": ["env"],
+  "presets": [
+    [
+      "env", {
+        "node": "6.1"
+      }
+    ]
+  ],
   "plugins": [
     ["transform-runtime", {
       "regenerator": true

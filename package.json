@@ -15,8 +15,5 @@
     "babel-runtime": "^6.23.0",
     "serverless-offline": "^3.13.2",
     "serverless-plugin-optimize": "^1.0.0-rc.15"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.23.0"
   }
 }

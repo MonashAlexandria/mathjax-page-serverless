@@ -9,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "encodeurl": "^1.0.1",
     "mathjax-node": "^1.0.0",
     "querystring": "^0.2.0",
     "texvcjs": "git+https://github.com/wikimedia/texvcjs#v0.3.2"

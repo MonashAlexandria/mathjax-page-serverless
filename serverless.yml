@@ -19,7 +19,7 @@ service: mathjax-serverless
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs6.10
 
 # you can overwrite defaults here
 #  stage: dev
@@ -56,7 +56,7 @@ provider:
 
 functions:
   hello:
-    handler: functions/handler.default
+    handler: functions/latex_svg/handler.default
     name: Latex To SVG
     description: Converting Latex To SVG
     events:
