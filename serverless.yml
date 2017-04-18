@@ -74,6 +74,15 @@ functions:
               method: post
               path: png
               integration: lambda
+  latex_page:
+        handler: functions/latex_page/handler.default
+        name: latex_page_converter
+        description: Bulk converting latex to svg in a html page
+        events:
+              - http: post page
+                method: post
+                path: page
+                integration: lambda
 
 plugins:
   - serverless-offline

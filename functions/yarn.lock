@@ -558,6 +558,13 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
+mathjax-node-page@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/mathjax-node-page/-/mathjax-node-page-1.2.5.tgz#538d70d49f4b47b5a7aaeb12594c9a4e9143aeab"
+  dependencies:
+    mathjax-node "^1.0.0"
+    yargs "*"
+
 mathjax-node-svg2png@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mathjax-node-svg2png/-/mathjax-node-svg2png-1.0.2.tgz#d221734da3055fa630de9ab69c55b3883d0f6c8c"
@@ -1041,7 +1048,7 @@ yargs-parser@^4.2.0:
   dependencies:
     camelcase "^3.0.0"
 
-yargs@^6.5.0:
+yargs@*, yargs@^6.5.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
   dependencies:

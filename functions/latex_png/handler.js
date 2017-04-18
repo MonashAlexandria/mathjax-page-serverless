@@ -1,6 +1,5 @@
 'use strict';
 
-import "regenerator-runtime";
 import mjAPI from "mathjax-node-svg2png";
 import {LatexPngCommand} from "../lib/command/LatexCommand";
 
