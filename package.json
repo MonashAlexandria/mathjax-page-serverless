@@ -1,5 +1,5 @@
 {
-  "name": "mathjax-lambdas",
+  "name": "mathjax-lambda-function",
   "version": "1.0.0",
   "description": "Running mathjax-node in AWS Lambda",
   "scripts": {
@@ -8,12 +8,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-plugin-transform-async-to-module-method": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.3.2",
-    "babel-runtime": "^6.23.0",
-    "serverless-offline": "^3.13.2",
-    "serverless-plugin-optimize": "^1.0.0-rc.15"
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "serverless-offline": "^3.13.3",
+    "serverless-plugin-optimize": "^2.0.1-rc.1"
   }
 }

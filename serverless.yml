@@ -19,7 +19,9 @@ service: mathjax-serverless
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs4.3
+  memorySize: 512
+  timeout: 30
 
 # you can overwrite defaults here
 #  stage: dev
@@ -54,10 +56,15 @@ provider:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
+package:
+  exclude:
+    - node_modules
+  individually: true
+
 functions:
   latex_page:
         handler: functions/latex_page/handler.default
-        name: latex_page_converter
+        name: mathjax-serverless
         description: Bulk converting latex to svg in a html page
         events:
               - http: post page
@@ -67,12 +74,15 @@ functions:
 
 plugins:
   - serverless-offline
+  - serverless-plugin-optimize
 
 custom:
+  optimize:
+    presets: ['es2015', 'stage-2']
   serverless-offline:
     port: 4000
     babelOptions:
-      presets: ["env"]
+      presets: ["es2015", "stage-2"]
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

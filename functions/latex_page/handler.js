@@ -9,10 +9,7 @@ const mjnodeConfig = {
 };
 
 const pageConfig = {
-    format: ["TeX"],
-    MathJax: {
-        config: "TeX-AMS_HTML"
-    }
+    format: ["TeX"]
 };
 
 export default (event, context, callback) => {
