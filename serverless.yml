@@ -55,25 +55,6 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  latex_to_svg:
-    handler: functions/latex_svg/handler.default
-    name: Latex To SVG
-    description: Converting Latex To SVG
-    events:
-          - http: post svg
-            method: post
-            path: svg
-            integration: lambda
-
-  latex_to_png:
-      handler: functions/latex_png/handler.default
-      name: Latex To PNG
-      description: Converting Latex To PNG
-      events:
-            - http: post png
-              method: post
-              path: png
-              integration: lambda
   latex_page:
         handler: functions/latex_page/handler.default
         name: latex_page_converter

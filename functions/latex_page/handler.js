@@ -5,8 +5,7 @@ import mjNodePage from "mathjax-node-page";
 /*Start MathJax, great for container reuse*/
 const mjnodeConfig = {
     svg: true,
-    linebreaks: true,
-    equationNumbers: "all"
+    linebreaks: true
 };
 
 const pageConfig = {
@@ -17,11 +16,19 @@ const pageConfig = {
 };
 
 export default (event, context, callback) => {
-    mjNodePage.mjpage(event.body, pageConfig, mjnodeConfig, function(output) {
-        console.log(output); // resulting HTML string
-        callback(null, {
-            statusCode: 200,
-            body: output
+    try{
+        mjNodePage.mjpage(event.body, pageConfig, mjnodeConfig, function(output) {
+            callback(null, {
+                statusCode: 200,
+                body: output
+            });
         });
-    });
+    } catch(ex){
+        console.error(ex);
+        callback(null, {
+            statusCode: 500,
+            body: "Failed to transform latex to svg"
+        });
+    }
+
 };
