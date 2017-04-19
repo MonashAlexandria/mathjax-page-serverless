@@ -19,9 +19,9 @@ service: mathjax-serverless
 
 provider:
   name: aws
-  runtime: nodejs4.3
-  memorySize: 512
-  timeout: 30
+  runtime: nodejs6.10
+  memorySize: 1024
+  timeout: 60
 
 # you can overwrite defaults here
 #  stage: dev
@@ -59,7 +59,6 @@ provider:
 package:
   exclude:
     - node_modules
-  individually: true
 
 functions:
   latex_page:
@@ -74,11 +73,7 @@ functions:
 
 plugins:
   - serverless-offline
-  - serverless-plugin-optimize
-
 custom:
-  optimize:
-    presets: ['es2015', 'stage-2']
   serverless-offline:
     port: 4000
     babelOptions:

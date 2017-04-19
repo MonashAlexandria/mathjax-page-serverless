@@ -1,6 +1,6 @@
 'use strict';
 
-import mjNodePage from "mathjax-node-page";
+let mjNodePage = require("mathjax-node-page");
 
 /*Start MathJax, great for container reuse*/
 const mjnodeConfig = {
@@ -12,19 +12,25 @@ const pageConfig = {
     format: ["TeX"]
 };
 
-export default (event, context, callback) => {
+exports.default = function(event, context, callback) {
     try{
         mjNodePage.mjpage(event.body, pageConfig, mjnodeConfig, function(output) {
             callback(null, {
                 statusCode: 200,
-                body: output
+                body: output,
+                headers: {
+                    'content-type': 'text/html'
+                }
             });
         });
     } catch(ex){
         console.error(ex);
         callback(null, {
             statusCode: 500,
-            body: "Failed to transform latex to svg"
+            body: "Failed to transform latex to svg",
+            headers: {
+                'content-type': 'text/html'
+            }
         });
     }
 
