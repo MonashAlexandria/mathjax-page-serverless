@@ -63,7 +63,7 @@ package:
 functions:
   latex_page:
         handler: functions/latex_page/handler.default
-        name: mathjax-serverless
+        name: MathJaxPage
         description: Bulk converting latex to svg in a html page
         events:
               - http: post page
@@ -108,12 +108,12 @@ custom:
 #      variable2: value2
 
 # you can add CloudFormation resource templates here
-#resources:
-#  Resources:
-#    NewResource:
-#      Type: AWS::S3::Bucket
-#      Properties:
-#        BucketName: my-new-bucket
+resources:
+  Resources:
+    ApiGatewayMethodPagePost:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        AuthorizationType: AWS_IAM
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
