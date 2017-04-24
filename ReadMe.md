@@ -39,4 +39,16 @@ Using the following command:
 
 ## Notes:
 
-The URL given at the end of deployment is the API Gateway URL you need to define in web and worker environment.
+- The URL given at the end of deployment is the API Gateway URL you need to define in web and worker environment.
+- We're using AWS_IAM authorization for API Gateway, so it is important to sign (Signature V4) the request before sending to API Gateway. You also need to add policy to your IAM user so that it has permission to invoke the APIs.
+  ```
+  {
+              "Effect": "Allow",
+              "Action": [
+                  "execute-api:Invoke"
+              ],
+              "Resource": [
+                  "arn:aws:execute-api:us-west-2:[ACCOUNT_NUMBER]:*/*/POST/page"
+              ]
+   }
+  ```
