@@ -14,9 +14,9 @@ Running MathJax in Serverless environment.
 
 - Install package
 
-`nvm use && npm install && cd functions && yarn`
+`nvm use && yarn && cd functions && yarn`
 
-Note: `nvm use` will automatically switch your node environment to node 6.10
+Note: `nvm use` will automatically switch your node environment to node 6.10.
 
 - Start docker:
 

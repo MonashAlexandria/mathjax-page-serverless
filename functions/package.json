@@ -1,12 +1,11 @@
 {
-  "name": "mathjax-lambda-function",
+  "name": "MathJax-Page-Lambda-Function",
   "version": "1.0.0",
-  "description": "Running mathjax-node in AWS Lambda",
+  "description": "Running mathjax-page on AWS Lambda",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tuan Minh Huynh <hmtuan21@gmail.com> (https://github.com/tuanmh)",
   "dependencies": {
     "mathjax-node-page": "^1.2.5"
   }

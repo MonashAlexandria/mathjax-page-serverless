@@ -5,7 +5,6 @@ FROM node:6
 RUN apt-get update
 
 RUN npm install -g serverless
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
 RUN mkdir -p /var/www/html
 

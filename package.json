@@ -1,7 +1,7 @@
 {
-  "name": "mathjax-lambda-function",
+  "name": "MathJaxPage Serverless App",
   "version": "1.0.0",
-  "description": "Running mathjax-node in AWS Lambda",
+  "description": "Running MathJaxPage in Serverless environment",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
