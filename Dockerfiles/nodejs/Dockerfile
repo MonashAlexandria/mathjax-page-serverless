@@ -1,5 +1,5 @@
-# Node 4 is the current LTS release, which we use for stability, see https://github.com/nodejs/LTS/
-FROM node:6
+# Node 6.10 is the current LTS release, which we use for stability, see https://github.com/nodejs/LTS/
+FROM node:6.10
 
 # Update the system
 RUN apt-get update

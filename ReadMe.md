@@ -1,7 +1,7 @@
 Running MathJax in Serverless environment.
 
 # Tools Required
-- node 6.1
+- node 6.10
 - nvm ([Node Version Manager](https://github.com/creationix/nvm))
 - Serverless (https://www.npmjs.com/package/serverless)
 - Docker
