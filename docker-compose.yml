@@ -4,6 +4,8 @@ data:
    - .:/var/www/html/
 web:
   build: Dockerfiles/nodejs/
+  environment:
+    SLS_DEBUG: "*"
   ports:
     - "4000:4000"
   dns: 8.8.8.8
