@@ -10,6 +10,7 @@ const mjnodeConfig = {
 
 const pageConfig = {
     format: ["TeX"]
+    /*Note that AMS libs are still supported, using this configuration is enough*/
 };
 
 exports.default = function(event, context, callback) {
