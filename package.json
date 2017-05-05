@@ -1,5 +1,5 @@
 {
-  "name": "MathJaxPage Serverless App",
+  "name": "mathjax-page-serverless",
   "version": "1.0.0",
   "description": "Running MathJaxPage in Serverless environment",
   "scripts": {
