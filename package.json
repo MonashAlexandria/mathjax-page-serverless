@@ -1,0 +1,16 @@
+{
+  "name": "mathjax-page-serverless",
+  "version": "1.0.0",
+  "description": "Running MathJaxPage in Serverless environment",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "serverless-offline": "^3.13.3",
+    "serverless-plugin-optimize": "^2.0.1-rc.1"
+  }
+}
