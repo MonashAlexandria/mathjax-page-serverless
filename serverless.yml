@@ -20,7 +20,7 @@ service: mathjax-serverless
 provider:
   name: aws
   runtime: nodejs6.10
-  memorySize: 1024
+  memorySize: 1536 # largest mem -> highest CPU, which we want for this, as it's CPU intensive. Total cost should be similar to lower size, as it should run for less time (given CPU bound).
   timeout: 60
 
 package:
