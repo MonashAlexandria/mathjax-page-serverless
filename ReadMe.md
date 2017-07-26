@@ -1,3 +1,5 @@
+[![Dependency Status](https://www.versioneye.com/user/projects/597834100fb24f0041901a8e/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/597834100fb24f0041901a8e)
+
 Running MathJax in Serverless environment.
 
 # Tools Required
