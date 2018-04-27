@@ -13,7 +13,10 @@ services:
     dns: 8.8.8.8
     volumes_from:
       - data
-
+    networks:
+      default:
+        aliases:
+          - mathjax_page_serverless_web
 networks:
   default:
     external:
